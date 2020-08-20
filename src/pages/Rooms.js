@@ -4,7 +4,7 @@ import Banner from "../components/Banner"
 
 import {Link} from "react-router-dom"
 
-import { FaAlignRight } from 'react-icons/fa';
+// import { FaAlignRight } from 'react-icons/fa';
 
 const Rooms = () => {
   return (
