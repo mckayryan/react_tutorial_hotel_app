@@ -10,7 +10,7 @@ class FeaturedRooms extends Component {
 
   render() {
     let {loading, featuredRooms : rooms} = this.context;
-    rooms = rooms.map(room => {
+    const displayRooms = rooms.map(room => {
       return <Room key={room.id} room={room}/>
     })
 
@@ -18,7 +18,7 @@ class FeaturedRooms extends Component {
       <section className='featured-rooms'>
         <Title title="featured rooms" />
         <div className='featured-rooms-center'>
-          {loading ? <Loading /> : rooms}
+          {loading ? <Loading /> : displayRooms}
         </div>
       </section>
     );
